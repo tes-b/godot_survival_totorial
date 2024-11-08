@@ -1,14 +1,11 @@
-res://scenes/game_object/wizard_enemy/wizard_enemy.tscn
+res://scenes/ui/arena_time_ui.tscn
 res://resources/tileset.tres
 res://scenes/main/main.tscn
 res://scenes/manager/upgrade_manager.tscn
 res://scenes/game_object/player/player.tscn
 res://scenes/game_object/basic_enemy/basic_enemy.tscn
 res://scenes/component/death_component.tscn
+res://scenes/game_object/wizard_enemy/wizard_enemy.tscn
 res://scenes/component/velocity_component.tscn
 res://scenes/manager/enemy_manager.tscn
-res://scenes/game_object/wizard_enemy/wizard_enemy.gd
-res://scenes/component/velocity_component.gd
-res://scenes/manager/enemy_manager.gd
 res://scenes/game_object/experience_vial/experience_vial.tscn
-res://scenes/game_object/experience_vial/experience_vial.gd

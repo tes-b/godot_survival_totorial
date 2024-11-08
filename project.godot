@@ -38,6 +38,10 @@ entities_layer=""
 foreground_layer=""
 player=""
 
+[gui]
+
+theme/custom="res://resources/theme/theme.tres"
+
 [input]
 
 move_left={
