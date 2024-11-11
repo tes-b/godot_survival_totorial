@@ -1,3 +1,4 @@
+Label
 AnimationPlayer
 Node2D
 Node
@@ -10,5 +11,4 @@ TileMapLayer
 MarginContainer
 PanelContainer
 Button
-Label
 VBoxContainer
