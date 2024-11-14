@@ -1,3 +1,5 @@
+MarginContainer
+PanelContainer
 Node
 Sprite2D
 Label
@@ -8,7 +10,5 @@ CharacterBody2D
 GPUParticles2D
 Timer
 TileMapLayer
-MarginContainer
-PanelContainer
 Button
 VBoxContainer
