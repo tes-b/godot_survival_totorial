@@ -1,4 +1,4 @@
-res://scenes/ui/ability_upgrade_card.tscn
+res://scenes/ui/end_screen.tscn
 res://resources/theme/theme.tres
 res://resources/tileset.tres
 res://scenes/hit_flash_component.gdshader
@@ -8,6 +8,7 @@ res://scenes/manager/upgrade_manager.tscn
 res://scenes/game_object/player/player.tscn
 res://scenes/ui/floating_text.tscn
 res://scenes/ui/arena_time_ui.tscn
-res://scenes/component/hurt_box_component.tscn
-res://scenes/ability/sword_ability_controller/sword_ability_controller.tscn
-res://scenes/ability/axe_ability_controller/axe_ability_controller.tscn
+res://scenes/ui/ability_upgrade_card.tscn
+res://scenes/ui/upgrade_screen.tscn
+res://scenes/ui/experience_bar.tscn
+res://scenes/manager/arena_time_manager.tscn
