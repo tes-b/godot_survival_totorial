@@ -1,7 +1,8 @@
-VBoxContainer
 AnimationPlayer
-AnimationTree
 ColorRect
+CanvasLayer
+VBoxContainer
+AnimationTree
 MarginContainer
 PanelContainer
 Node
@@ -11,5 +12,3 @@ Node2D
 CollisionShape2D
 CharacterBody2D
 GPUParticles2D
-Timer
-TileMapLayer
