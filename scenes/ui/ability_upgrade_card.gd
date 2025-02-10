@@ -17,7 +17,7 @@ func _ready() -> void:
 func play_in(delay:float = 0):
 	modulate = Color.TRANSPARENT
 	await get_tree().create_timer(delay).timeout
-	animation_player.play("in")
+	animation_player.play("in") 
 	
 	
 func play_discard():
