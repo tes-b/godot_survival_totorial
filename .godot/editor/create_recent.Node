@@ -1,5 +1,6 @@
-AudioStreamPlayer2D
 AudioStreamPlayer
+Button
+AudioStreamPlayer2D
 AnimationPlayer
 ColorRect
 CanvasLayer
@@ -11,4 +12,3 @@ Node
 Sprite2D
 Label
 Node2D
-CollisionShape2D

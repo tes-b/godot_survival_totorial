@@ -1,6 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://cj0rjc3njx3d8"]
+[gd_scene load_steps=13 format=3 uid="uid://cj0rjc3njx3d8"]
 
 [ext_resource type="Script" path="res://scenes/ui/ability_upgrade_card.gd" id="1_ssbqn"]
+[ext_resource type="PackedScene" uid="uid://bdvx7sksfac4x" path="res://scenes/component/random_stream_player_component.tscn" id="2_harua"]
+[ext_resource type="AudioStream" uid="uid://c7pnaul7gwolj" path="res://assets/audio/switch8.ogg" id="10_vfcr6"]
+[ext_resource type="AudioStream" uid="uid://bdemk4u7hc8qt" path="res://assets/audio/switch10.ogg" id="12_v5x6f"]
 
 [sub_resource type="Animation" id="Animation_1e8oy"]
 length = 0.001
@@ -115,6 +118,20 @@ tracks/1/keys = {
 "update": 0,
 "values": [0.0, -0.0872665, 0.0872665, 0.0]
 }
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ClickPlayerComponent")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"play_random"
+}]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_7gpax"]
 _data = {
@@ -155,6 +172,20 @@ tracks/0/keys = {
 "update": 0,
 "values": [0.0, -0.0872665, 0.0872665, 0.0]
 }
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("HoverPlayerComponent")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"play_random"
+}]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4g0aw"]
 _data = {
@@ -168,6 +199,14 @@ offset_right = 150.0
 offset_bottom = 150.0
 pivot_offset = Vector2(75, 75)
 script = ExtResource("1_ssbqn")
+
+[node name="HoverPlayerComponent" parent="." instance=ExtResource("2_harua")]
+volume_db = -30.0
+streams = Array[AudioStream]([ExtResource("12_v5x6f")])
+
+[node name="ClickPlayerComponent" parent="." instance=ExtResource("2_harua")]
+volume_db = -12.0
+streams = Array[AudioStream]([ExtResource("10_vfcr6")])
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
