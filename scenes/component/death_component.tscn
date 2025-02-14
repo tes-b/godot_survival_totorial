@@ -97,5 +97,4 @@ fixed_fps = 0
 interpolate = false
 
 [node name="HitRandomAudioPlayerComponent" parent="." instance=ExtResource("3_815x2")]
-max_distance = 300.0
 streams = Array[AudioStream]([ExtResource("4_2lpex"), ExtResource("5_el37p"), ExtResource("6_aghae"), ExtResource("7_eo01s"), ExtResource("8_ssx6i")])

@@ -1,7 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://defsut7aseyhs"]
+[gd_scene load_steps=9 format=3 uid="uid://defsut7aseyhs"]
 
 [ext_resource type="Script" path="res://scenes/ui/end_screen.gd" id="1_siu18"]
 [ext_resource type="PackedScene" uid="uid://b5e0m3t661nif" path="res://scenes/ui/sound_button.tscn" id="2_glpwo"]
+[ext_resource type="AudioStream" uid="uid://ck0f24l2sbhhw" path="res://assets/audio/jingles_victory.ogg" id="3_7eh08"]
+[ext_resource type="AudioStream" uid="uid://ble1m60w1gv8x" path="res://assets/audio/jingles_defeat.ogg" id="4_mohnp"]
 
 [sub_resource type="Animation" id="Animation_s771b"]
 length = 0.001
@@ -137,3 +139,13 @@ unique_name_in_owner = true
 layout_mode = 2
 text = "Quit
 "
+
+[node name="VictoryStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_7eh08")
+volume_db = -10.0
+bus = &"SFX"
+
+[node name="DefeatStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_mohnp")
+volume_db = -10.0
+bus = &"SFX"

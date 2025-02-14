@@ -1,3 +1,4 @@
+res://scenes/autoload
 res://scenes/component
 res://scenes/ui
 D:/Godot/survivors_tutorial/output
@@ -8,7 +9,6 @@ res://scenes/ability/axe_ability
 res://scenes/ability/axe_ability_controller
 res://scenes/manager
 res://resources/upgrades
-res://scenes/autoload
 res://scenes/game_object/experience_vial
 res://scenes/ability/sword_ability_controller
 res://scenes/ability/sword_ability

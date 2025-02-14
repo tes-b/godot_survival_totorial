@@ -195,8 +195,9 @@ _data = {
 
 [node name="AbilityUpgradeCard" type="PanelContainer" groups=["upgrade_card"]]
 custom_minimum_size = Vector2(120, 150)
+offset_top = 1.0
 offset_right = 150.0
-offset_bottom = 150.0
+offset_bottom = 151.0
 pivot_offset = Vector2(75, 75)
 script = ExtResource("1_ssbqn")
 
