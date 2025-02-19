@@ -1,8 +1,10 @@
+res://scenes/ui/options_menu.tscn
 res://resources/theme/theme.tres
+res://resources/tileset.tres
 res://scenes/hit_flash_component.gdshader
 res://scenes/ui/vignette.gdshader
 res://resources/upgrades/axe.tres
 res://scenes/ui/main_menu.tscn
-res://resources/tileset.tres
 res://scenes/main/main.tscn
+res://scenes/ui/options_menu.gd
 res://scenes/ui/main_menu.gd
