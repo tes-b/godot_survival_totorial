@@ -27,7 +27,6 @@ func update_display():
 	music_slider.value = get_bus_volume_percent("Music")
 	
 	
-
 func get_bus_volume_percent(bus_name:String):
 	var bus_index = AudioServer.get_bus_index(bus_name)
 	var volume_db = AudioServer.get_bus_volume_db(bus_index)

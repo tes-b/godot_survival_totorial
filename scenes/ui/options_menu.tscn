@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=4 uid="uid://cyavlcdxdxgrd"]
+[gd_scene load_steps=5 format=4 uid="uid://cyavlcdxdxgrd"]
 
 [ext_resource type="Script" path="res://scenes/ui/options_menu.gd" id="1_t51vy"]
+[ext_resource type="PackedScene" uid="uid://djixs35t4c6gg" path="res://scenes/ui/vignette.tscn" id="2_mhlta"]
 [ext_resource type="TileSet" uid="uid://bysykghyhw5gb" path="res://resources/tileset.tres" id="2_xwtll"]
 [ext_resource type="PackedScene" uid="uid://b5e0m3t661nif" path="res://scenes/ui/sound_button.tscn" id="3_yng12"]
 
@@ -21,6 +22,8 @@ use_kinematic_bodies = true
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -2.0
+offset_right = -2.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -45,6 +48,7 @@ theme_override_constants/separation = 24
 
 [node name="Label" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_type_variation = &"BlueOutlineLabel"
 theme_override_font_sizes/font_size = 32
 text = "Options
 "
@@ -59,6 +63,7 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/SfxOptionContainer"]
 layout_mode = 2
+theme_type_variation = &"BlueOutlineLabel"
 text = "SFX Volume
 "
 
@@ -73,6 +78,7 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/MusicOptionContainer"]
 layout_mode = 2
+theme_type_variation = &"BlueOutlineLabel"
 text = "Music Volume"
 
 [node name="MusicSlider" type="HSlider" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/MusicOptionContainer"]
@@ -86,6 +92,7 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/WindowOptionContainer"]
 layout_mode = 2
+theme_type_variation = &"BlueOutlineLabel"
 text = "Window Mode
 "
 
@@ -101,3 +108,5 @@ custom_minimum_size = Vector2(50, 0)
 layout_mode = 2
 size_flags_horizontal = 0
 text = "Back"
+
+[node name="Vignette" parent="." instance=ExtResource("2_mhlta")]
