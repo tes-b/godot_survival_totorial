@@ -17,5 +17,4 @@ func _process(delta: float) -> void:
 		visuals.scale = Vector2(-move_sign,1)
 	
 func on_hit():
-	print("on_hit")
 	$HitRandomAudioPlayerComponent.play_random()

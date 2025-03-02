@@ -12,6 +12,8 @@ config_version=5
 
 config/name="Survivors_Tutorial"
 run/main_scene="res://scenes/ui/main_menu.tscn"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="2DSurvivor"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
