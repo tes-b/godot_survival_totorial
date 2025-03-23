@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=4 uid="uid://dftaiwq64lpae"]
+[gd_scene load_steps=7 format=4 uid="uid://dftaiwq64lpae"]
 
 [ext_resource type="Script" path="res://scenes/ui/meta_menu.gd" id="1_lj8vp"]
 [ext_resource type="TileSet" uid="uid://bysykghyhw5gb" path="res://resources/tileset.tres" id="2_i5b72"]
 [ext_resource type="Script" path="res://resources/meta_upgrades/meta_upgrade.gd" id="2_rrmjn"]
 [ext_resource type="Resource" uid="uid://co8u5cxkdoh6o" path="res://resources/meta_upgrades/experience_gain.tres" id="3_f86m2"]
 [ext_resource type="PackedScene" uid="uid://djixs35t4c6gg" path="res://scenes/ui/vignette.tscn" id="4_sh05d"]
+[ext_resource type="PackedScene" uid="uid://dsq2r18tmfduw" path="res://scenes/ui/meta_upgrade_card.tscn" id="5_41376"]
 
 [node name="MetaMenu" type="CanvasLayer"]
 layer = 2
@@ -21,25 +22,54 @@ tile_map_data = PackedByteArray("AAAnABYAAAAAAAQAAAAnABUAAAABAAQAAAAnABQAAAAAAAQ
 tile_set = ExtResource("2_i5b72")
 use_kinematic_bodies = true
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -2.0
-offset_right = -2.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
 theme_override_constants/margin_left = 24
 theme_override_constants/margin_top = 16
 theme_override_constants/margin_right = 24
 theme_override_constants/margin_bottom = 16
 
-[node name="GridContainer" type="GridContainer" parent="MarginContainer"]
+[node name="GridContainer" type="GridContainer" parent="ScrollContainer/MarginContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-size_flags_horizontal = 4
+size_flags_horizontal = 6
 theme_override_constants/h_separation = 16
-columns = 3
+theme_override_constants/v_separation = 16
+columns = 2
+
+[node name="MetaUpgradeCard" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("5_41376")]
+layout_mode = 2
+
+[node name="MetaUpgradeCard2" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("5_41376")]
+layout_mode = 2
+
+[node name="MetaUpgradeCard3" parent="ScrollContainer/MarginContainer/GridContainer" instance=ExtResource("5_41376")]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_right = 98.0
+offset_bottom = 53.0
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 16
+
+[node name="BackButton" type="Button" parent="MarginContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Back"
 
 [node name="Vignette" parent="." instance=ExtResource("4_sh05d")]
 layer = 3
